@@ -22,6 +22,10 @@ and Git Bash for Windows. The second stage sticks mostly
 to the same commands, but has some optional parts that
 use some others as well.
 
+* Errata
+
+  So far so good! We'll keep you posted if any come up.
+
 * First Step
 
   Clone the repository [[https://github.com/36-750/git-challenge-1]]
@@ -66,7 +70,6 @@ use some others as well.
    4. Concatenate the two recorded strings into a single string
       (for instance "abcgxyz" and "uvw8" would be joined into
       "abcgxyzuvw8"). This is the password for the PDF file.
-
 
 * Resources 
 

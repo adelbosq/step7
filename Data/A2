@@ -1,1 +1,4 @@
 # script part 2
+echo "Unfortunately, no one can be…told what the Matrix is. You have to see it for yourself." > Info/CG6
+echo "Red pill or blue pill?" >> Info/CG6
+

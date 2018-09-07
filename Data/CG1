@@ -1,0 +1,3 @@
+#!/bin/sh
+
+head -c $1 < /dev/random | base64 | fold -w 80 
