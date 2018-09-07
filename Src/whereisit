@@ -1,0 +1,58 @@
+#! /usr/bin/perl -w
+    eval 'exec /usr/bin/perl -S $0 ${1+"$@"}'
+        if 0; #$running_under_some_shell
+
+use strict;
+use File::Find ();
+
+# Set the variable $File::Find::dont_use_nlink if you're using AFS,
+# since AFS cheats.
+
+# for the convenience of &wanted calls, including -eval statements:
+use vars qw/*name *dir *prune/;
+*name   = *File::Find::name;
+*dir    = *File::Find::dir;
+*prune  = *File::Find::prune;
+
+# Use gnu xargs and ls if possible
+my $xargs_cmd;
+
+if ( -x '/usr/local/bin/gxargs' )
+{
+    $xargs_cmd = '| /usr/local/bin/gxargs --null --no-run-if-empty /usr/local/bin/gls -ld --block-size=si ';
+}
+else
+{
+    # sub-optimal because it runs if empty
+    $xargs_cmd = '| xargs -0 ls -ldh';
+}
+
+# Process arguments
+
+exit(0) if( @ARGV == 0 );
+
+chomp(my $CWD     = `/bin/pwd`);
+my $PATTERN = shift @ARGV;
+my @PATH    = (@ARGV >= 1) ? @ARGV : ($CWD);
+
+# Send output to xargs
+
+open( XARGS, $xargs_cmd ) || die "Cannot begin xargs";
+
+# Traverse desired filesystems
+
+File::Find::find( {wanted => \&wanted}, @PATH );
+
+# Done (it would be nice to have a return code)
+
+close( XARGS );
+exit;
+
+
+sub wanted
+{
+    my ($dev,$ino,$mode,$nlink,$uid,$gid);
+
+    print XARGS  "$name\0" if( (($dev,$ino,$mode,$nlink,$uid,$gid) = lstat($_)) &&
+                               (-f _ || -d _) && /$PATTERN/s );
+}
