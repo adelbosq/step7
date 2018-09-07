@@ -35,6 +35,7 @@ use some others as well.
   open that file. Various resources for this stage are
   listed below to help you with these actions; each PDF file
   along the way will have similar resources and links.
+  (URLs in the PDF documents are all clickable links.)
 
 ** Background
 
