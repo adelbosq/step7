@@ -1,0 +1,76 @@
+#+TITLE: Git and Shell Challenge
+#+AUTHOR: Statistics 650/750
+
+* Introduction
+
+  This repository provides the basic data for a challenge
+that is designed to sharpen your skills with Git and with
+the unix command shell. The first phase of the challenge
+focuses on Git and later steps focus on shell commands
+and tools.
+
+  At each stage, you will extra from the repository the
+information you need to find the next steps in the hunt. In
+most cases, this corresponds to finding or constructing a
+password-protected PDF file NEXTSTEP.pdf and the password
+needed to open that file. From time to time, the information
+needed for the next step is available by other means.
+
+  The first stage of the challenge uses git commands and
+a few unix commands that are built-in on Mac OS X, Linux,
+and Git Bash for Windows. The second stage sticks mostly
+to the same commands, but has some optional parts that
+use some others as well.
+
+* First Step
+
+  Clone the repository [[https://github.com/36-750/git-challenge-1]]
+  onto your local machine with the =git clone= command. Move
+  into the =git-challenge= directory Check the status of the
+  repository with the =git status= command, and confirm that
+  you are in the master branch.
+
+  Now find the file =NEXTSTEP.pdf= in the top level directory
+  of the repository. You will need to find a password to
+  open that file. Various resources for this stage are
+  listed below to help you with these actions; each PDF file
+  along the way will have similar resources and links.
+
+** Background
+
+   The =git status= and =git log= commands are useful for
+   inspecting the state of the repository and its history.
+   You can display the log in a variety of ways, viewing
+   various data about each commit, including its unique hash
+   and commit message. Here we will use the =git log= command
+   to construct a password for the PDF file. Perform the
+   tasks described below.
+
+** Tasks
+
+   1. Display a log of the most recent 12 commits, with each
+      commit on one line and abbreviated commit hashes
+      displayed. (Hint: use the =git log= command.)
+      
+   2. In the displayed log, two consecutive commits have
+      questions in the first line of their commit messages.
+      Record the abbreviated commit hash (seven characters)
+      for the older of these two commits.
+  
+   3. Search the entire commit log (again with =git log=) for a
+      commit whose message contains an equation of the form
+      X=<word>. Record that word. (Hint: there are options to
+      the =git log= that help perform that search.)
+  
+   4. Concatenate the two recorded strings into a single string
+      (for instance "abcgxyz" and "uvw8" would be joined into
+      "abcgxyzuvw8"). This is the password for the PDF file.
+
+
+* Resources 
+
+  + Inspecting Logs and Status: https://www.atlassian.com/git/tutorials/inspecting-a-repository
+  + https://git-scm.com/book/en/v2/Git-Basics-Viewing-the-Commit-History
+  + git log documentation at https://git-scm.com/docs/git-log or type
+    =git help log= at the shell command prompt
+
