@@ -1,0 +1,2 @@
+echo "This is simple message that should display if you have base64" | base64 | base64 --decode
+
