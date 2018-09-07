@@ -1,0 +1,16 @@
+#+TITLE: No Conflict Case
+
+** The new option 'configure --with-mailutils' causes Emacs to rely on
+GNU Mailutils to retrieve email.  It is recommended, and is the
+default if GNU Mailutils is installed.  When --with-mailutils is not
+in effect, the Emacs build procedure by default continues to build and
+install a limited 'movemail' substitute that retrieves POP3 email only
+via insecure channels; to avoid this problem, use either
+--with-mailutils or --without-pop when configuring.
+
+** The new option 'configure --enable-gcc-warnings=warn-only' causes
+GCC to issue warnings without stopping the build.  This behavior is
+now the default in developer builds.  As before, use
+'--disable-gcc-warnings' to suppress GCC's warnings, and
+'--enable-gcc-warnings' to stop the build if GCC issues warnings.
+
