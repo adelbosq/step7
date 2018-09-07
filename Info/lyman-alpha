@@ -1,0 +1,20 @@
+* Lyman alpha
+** Great Lyman-alpha movie at
+  http://www.cosmocrunch.co.uk
+
+** Physics of the Lyalpha forest
+
+  $ F_{\srm obs} = F_{\srm emit} e^{-\tau} $$
+  where $\tau$ (the optical depth) is proportional to
+  the density of neutral hydrogen
+
+  #+latex: \newcommand\angle[1]{\left\langle#1\right\rangle}
+
+  \begin{align}
+  \delta F &= e^{-\delta \tau} - 1 \\
+  \delta F &\equiv \frac{F_{\srm obs}}{\angle{F_{\srm obs}}} \equiv \frac{\tau}{\angle{\tau}}.
+  \end{align}
+  
+  KG Lee puts out a catalog giving his best estimates of the continua
+
+
