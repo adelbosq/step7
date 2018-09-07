@@ -1,0 +1,7 @@
+.*~
+*.log
+*.dvi
+.bonz*
+.DS_Store
+*/RCS/*,v
+*.tgz
