@@ -1,0 +1,8 @@
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
+echo "The word you are looking for is 'enterprise'."
+echo "Creating instructions file..."
+
+cp "$DIR/../Info/puppies" "$DIR/../NEXTSTEP.pdf"
+
+echo "Ready"
