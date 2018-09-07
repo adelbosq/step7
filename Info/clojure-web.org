@@ -1,0 +1,89 @@
+#+TITLE: Resources related to (Clojure-based) Web Services
+
+* Frameworks and Libraries
+** [[https://github.com/noprompt/garden][Garden]] for css
+   See also [[https://github.com/facjure/mesh][Mesh]], for grids and typograph built on Garden.
+
+   See [[https://blog.estimate-work.com/a-new-world-writing-css-in-clojurescript-and-life-after-sass-bdf5bc80a24f#.h9s652oau][this]] article for nice reasons why Garden is so useful (and improves on sass).
+** [[https://hoplon.io/][Hoplon]], a Clojurescript Web Framework
+** [[https://github.com/DomKM/silk][Silk]], an isomorphic routing library
+   A lightweight, data-focused structure that works with clojure and clojurescript
+** [[http://caribou.github.io/caribou/docs/outline.html][Caribou]], an MVC structure.  Code [[https://github.com/caribou/caribou][here]].
+** [[http://purnam.github.io/gyr/][Gyr]], a Clojure mapping to angular.
+** [[https://github.com/lynaghk/cljx][Cljx]], a way to code for both Clojure and Clojurescript simultaneously.
+** [[http://lhorie.github.io/mithril/][Mithril]], a fast and lightweight webapp framework (worth considering for a clojure/clojurescript library)
+** [[https://github.com/pedestal/pedestal][Pedestal Service]] and [[https://github.com/pedestal/pedestal/tree/master/guides/documentation][documentation]].
+** Info on [[http://yogthos.net/index.html][using Reagent]] (see more posts at http://yogthos.net/, e.g., [[http://yogthos.net/posts/2014-07-15-Building-Single-Page-Apps-with-Reagent.html][this]]).
+
+** The [[http://www.lispcast.com/parts-of-ring][parts of ring]], lispcast.  Nice intro.
+** [[https://github.com/budu/lobos][Lobos]] for database schema and migrations (with [[http://budu.github.io/lobos/documentation.html][documentation]]).
+
+* HTTP
+** [[https://github.com/dakrone/clj-http][clj-http]]  
+** [[http://www.http-kit.org/][http-kit]], which looks great but possibly out of date or not maintained.
+** [[https://github.com/bumptech/stud][stud]], a TLS unwrapping daemon
+
+* Clojurescript
+** [[http://cljs.info/cheatsheet/][Clojurescript CheatSheet]]
+** [[https://github.com/magomimmo/modern-cljs][Modern-cljs]], tutorials on clojurescript.
+
+** [[https://leanpub.com/building-a-system-in-clojure][How to Build a System]] in Clojure and Clojurescript
+** [[https://github.com/bhauman/lein-figwheel][Figwheel]] for live reloading
+** [[https://yogthos.net/posts/2015-11-12-ClojureScript-Eval.html][Evaluating Clojurescript in the browser]]
+** Hacker news [[https://news.ycombinator.com/item?id=10788198][commentary]] on Clojurescript Year in Review
+* Plugins and Tools
+** [[https://github.com/viebel/klipse][Klipse]], live code evaluation plugin in clojurescript
+* Examples and Advice
+** The Theory of [[http://tomasp.net/coeffects/][Coeffects]] (nice page)
+** [[http://rundis.github.io/blog/2015/buddy_auth_part3.html][Securing Clojure Microservices with Buddy]]  (using auth tokens, with code)
+** [[http://garajeando.blogspot.com/2016/11/using-effects-in-re-frame.html][Using co-effects in reframe]]
+** Clojure [[https://www.youtube.com/watch?v%3DCBL59w7fXw4][web security talk]].
+** [[https://devcenter.heroku.com/articles/clojure-web-application][A Clojure Web Application]], helpful with links.
+** [[https://atlanis.net/blog/posts/new-site-stasis.html][Blog]] built with magnar's [[https://github.com/magnars/stasis][stasis]]; here's the [[https://github.com/emallson/atlanis.net-blog/][code]].
+
+** [[http://side-effects-bang.blogspot.com/2014/12/hosting-clojure-web-apps-in-7-easy-steps.html][Hosting Clojure Web Apps in 7 Simple Steps]]
+** [[https://purelyfunctional.tv/courses/core-async-patterns/?__s=mwimczsgwpeufzosp3nc][core-async patterns]]
+* Databases
+** [[http://clojure.github.io/java.jdbc/][Clojure JDBC documentation]]
+** Using [[http://clojure-doc.org/articles/ecosystem/java_jdbc/home.html][JDBC]], with links to more on [[http://clojure-doc.org/articles/ecosystem/java_jdbc/using_sql.html][using SQL]] and [[http://clojure-doc.org/articles/ecosystem/java_jdbc/using_ddl.html][using DDL]] et cetera.
+** [[http://sqlkorma.com/docs][Korma]] documentation and [[http://korma.github.io/Korma/][API]].
+
+* Security
+** [[https://github.com/cemerick/friend][Friend]] security library for clojure
+** [[http://www.lispcast.com/clojure-web-security][Clojure Web Security]], lisp-cast.
+** [[https://crackstation.net/hashing-security.htm][Hashing Securely]], advice.
+
+* Angular
+** Angular [[https://docs.angularjs.org/][Documentation]], e.g., [[https://docs.angularjs.org/api/ng/directive/ngIf][ngIf]].
+** [[http://yeoman.io/learning/][Yeoman documentation]].
+** [[http://www.williambrownstreet.net/blog/2014/04/faster-angularjs-rendering-angularjs-and-reactjs/][Faster Rendering]], Angular + React
+** [[http://stackoverflow.com/questions/13832529/how-to-config-routeprovider-and-locationprovider-in-angularjs][Configure routeprovider and locationprovider]].
+** New Angular [[http://www.yearofmoo.com/2013/08/remastered-animation-in-angularjs-1-2.html][Animation]].
+** Angular updates blog, [[http://www.yearofmoo.com/][Year of Moo]].
+
+* CSS
+** [[http://mashable.com/2011/06/14/compass-css-guide/][Compass CSS Guide]] and [[http://compass-style.org/reference/compass/][Reference]].
+** [[http://getbootstrap.com/][Bootstrap]] and [[http://getbootstrap.com/components/][Bootstrap Components]].
+
+
+** [[http://www.creativebloq.com/css3/create-fluid-layouts-html5-and-css3-3142768][Creating Fluid Layouts with CSS and HTML5]]
+** [[http://alistapart.com/article/responsive-web-design][Responsive Web Design]]
+* Fonts
+** [[https://developers.google.com/fonts/docs/getting_started][Getting Started with Google Fonts]]
+* Examples
+** Clojurescript and Reagent
+*** Simple example and experience [[http://getprismatic.com/story/1405451329953][here]].   
+*** [[http://dhruvp.github.io/2015/02/23/mailchimip-clojure/][Building a login form with clojurescript and reagent]]
+*** Buildig a System in Clojure and Clojurescript ([[https://leanpub.com/building-a-system-in-clojure/packages/book/purchases/3Ry2YkEVDFJekX-HY0qMfi/thankyou][receipt]])
+    username christophergenovese
+    http://leanpub.com/u/christophergenovese
+
+    pi/6eq.52359877
+
+** [[http://www.parens-of-the-dead.com/e1.html][Parens of the Dead]], by Emacs-Rocks guy magnars.
+* Graphics
+* Resources
+** https://lambdaisland.com/
+** http://yogthos.net/
+
+
