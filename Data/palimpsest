@@ -1,1 +1,13 @@
-This can be overwritten.
+# script part 1
+echo "" >> Data/CG1
+echo "# Generate random crap" >> Data/CG1
+
+# script part 2
+echo "Unfortunately, no one can be…told what the Matrix is. You have to see it for yourself." > Info/CG6
+echo "Red pill or blue pill?" >> Info/CG6
+
+# script part 3
+
+perl -i -pe 's|________|Info/CG2|' Data/CG5
+perl -i -pe 's|______|carina|' Data/UR
+echo "The palimpsest has been overwritten."
